@@ -1,0 +1,31 @@
+{
+  "name": "raml2mocha",
+  "version": "0.1.0",
+  "description": "Generates Mocha tests from RAML",
+  "author": {
+    "email": "milesoldenburg@gmail.com",
+    "name": "Miles Oldenburg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/milesoldenburg/raml2mocha.git"
+  },
+  "devDependencies": {
+    "basic-auth": "^1.0.4",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "q": "^1.4.1",
+    "raml2obj": "^2.2.0",
+    "supertest": "^1.2.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "cd test && node test.js"
+  }
+}

@@ -1,0 +1,28 @@
+#%RAML 0.8
+---
+title: Test API
+baseUri: http://localhost:3000/{version}
+version: v1
+mediaType: application/json
+securitySchemes:
+  - basicAuth:
+      type: Basic Authentication
+securedBy: [basicAuth]
+
+/users:
+  get:
+    responses:
+      200:
+        body:
+          example: |
+            {
+              "name": "User1",
+              "email": "user1@example.com"
+            }
+  post:
+    body:
+      example: |
+        {
+          "name": "User1",
+          "email": "user1@example.com"
+        }
